@@ -21,8 +21,13 @@ Create a pull request from the command line, or attach a branch to an open GitHu
 
 Install from source, or visit the [releases page](https://github.com/jehiah/git-open-pull/releases)
 
-```
+```sh
 go get -u github.com/jehiah/git-open-pull
+```
+Starting with go 1.18 use `go install`, `go get` is dedicated to adjusting `go.mod` dependencies: https://tip.golang.org/doc/go1.18#go-command
+```sh
+go install github.com/jehiah/git-open-pull@latest
+# go install available with go 1.16 or later
 ````
 
 ### CONFIGURATION
